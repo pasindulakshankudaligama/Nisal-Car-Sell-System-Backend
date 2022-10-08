@@ -1,0 +1,26 @@
+{
+  "name": "nisal-car-sell-system-backend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "nodemon": "nodemon app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pasindulakshankudaligama/Nisal-Car-Sell-System-Backend.git"
+  },
+  "author": "pasinsulakshankudaligama",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/pasindulakshankudaligama/Nisal-Car-Sell-System-Backend/issues"
+  },
+  "homepage": "https://github.com/pasindulakshankudaligama/Nisal-Car-Sell-System-Backend#readme",
+  "dependencies": {
+    "express": "^4.18.1",
+    "mongodb": "^4.10.0",
+    "mongoose": "^6.6.5",
+    "nodemon": "^2.0.20"
+  }
+}
