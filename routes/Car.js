@@ -45,4 +45,20 @@ router.put('/',async (req,res)=>{
     }
 })
 
+router.delete('/' , async (req,res)=>{
+    try{
+        const cars=await Car.find();
+        for (const c of cars){
+            if(req.body.regNo===c.regNo){
+                const dlt=await Car.findById(c._id);
+
+                const response=await dlt.remove();
+                res.send(response)
+            }
+        }
+    }catch (e) {
+        res.send('error :'+e)
+    }
+})
+
 module.exports = router;
