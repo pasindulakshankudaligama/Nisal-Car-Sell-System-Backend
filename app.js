@@ -1,5 +1,7 @@
 const express = require('express');
 const mongoose = require('mongoose');
+const user=require('./routes/User');
+const vehicle =require('./routes/Vehicle')
 
 const app=express();
 const port=4000;
@@ -14,6 +16,9 @@ con.on("open",()=>{
 });
 
 app.use(express.json());
+app.use('/user',user);
+app.use('/vehicle',vehicle)
+
 
 app.listen(port,()=>{
     console.log(`starting on ${port}`);
